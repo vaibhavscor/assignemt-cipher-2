@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <!-- q1 -->
+<script>
+function fun1(a,b) {
+    var c = 0
+    for (let index = 0; index < b.length; index++) {
+        if(a === b[index]){
+            c = c + 1;
+        }
+        
+    }
+    console.log(c);
+}
+</script>
+
+<!-- q2 -->
+<!-- <script>
+
+function addup(){
+    num = document.getElementById("text1").value;
+    var c = 0;
+    for (var index = 1; index <= num; index++) {
+        c = c + index;
+    }
+    console.log(c);
+}
+</script> -->
+
+
+<!-- q3 -->
+<script>
+    function fun3(str){
+        console.log(str.length)
+        res = str;
+        console.log(res);
+        for (var index = 0; index <str.length; index++) {
+            // console.log(c[index])
+        if(str[index] === 'a'){
+            var res = res.replace(/a/g, "1");
+        }
+        else if(str[index] === 'e'){
+            var res = res.replace(/e/g, "2");
+        }
+        else if (str[index] === 'i'){
+            var res = res.replace(/i/g, "3");
+        }
+        else if (str[index] === 'o'){
+            var res = res.replace(/o/g, "4");
+        }
+        else if (str[index] === 'u'){
+            var res = res.replace(/u/g, "5");
+        }
+    }
+    console.log(res);
+    }
+</script>
+
+</head>
+<body>
+
+
+    <!-- <input id="text2" placeholder="enter2"> -->
+    <!-- <button id="btn" onclick="fun1('a','edabit')">click me</button> -->
+    
+
+    <!-- <input id="text1" placeholder="enter1">
+    <button id="btn" onclick="addup()">click me</button> -->
+
+     <input id="text1" placeholder="enter1">
+    <button id="btn" onclick="fun3('karachi')">click me</button>
+
+</body>
+</html>

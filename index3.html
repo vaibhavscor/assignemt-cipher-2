@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- q1 -->
+<script>
+function fun3(){
+    x= document.getElementById("text2").value;
+    y= document.getElementById("text1").value;
+
+    for (let index = 0; index < x.length; index++) {
+        if(x[index] == s)
+        
+    }
+
+}
+
+</script>
+
+<!-- q2 -->
+<!-- <script>
+    function arr(){
+        var arr = [];
+        var v = document.getElementById("enter1").value;
+        var a = document.getElementById("enter2").value;
+        var i = document.getElementById("enter3").value;
+        var b = document.getElementById("enter4").value;
+        arr.push(v,a,i,b);
+        const isBelowThreshold = (currentValue) => currentValue == arr[0];
+        console.log(arr.every(isBelowThreshold));
+    }
+</script>
+ -->
+
+<!-- q3 -->
+<script>
+function dup1(n){
+        var uniqueItems = Array.from(new Set(n))
+        console.log(uniqueItems);
+    }
+
+</script>
+
+
+</head>
+<body>
+
+
+    <input id="enter1" placeholder="enter1">
+    <input id="enter2" placeholder="enter2">
+    <input id="enter3" placeholder="enter3">
+    <input id="enter4" placeholder="enter4">
+    <button id="btn" onclick="dup1(['John', 'Taylor', 'John'])">click me</button>
+</body>
+</html>
